@@ -68,6 +68,8 @@ GameLevel::move(unsigned int direction) -> bool
   case GLFW_KEY_RIGHT:
     directionX = -1;
     break;
+  default:
+    break;
   }
 
   new_folk_x = this->folkX + directionX;
