@@ -26,7 +26,7 @@ GameLevel::Load(const char *file)
       cubeData.push_back(row);
     }
 
-    if (cubeData.size() > 0)
+    if (!cubeData.empty())
       this->init();
   }
 }
@@ -67,6 +67,8 @@ GameLevel::move(unsigned int direction) -> bool
     break;
   case GLFW_KEY_RIGHT:
     directionX = -1;
+    break;
+  default:
     break;
   }
 
