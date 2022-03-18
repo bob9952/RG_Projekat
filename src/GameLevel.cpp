@@ -26,7 +26,7 @@ GameLevel::Load(const char *file)
       cubeData.push_back(row);
     }
 
-    if (cubeData.size() > 0)
+    if (!cubeData.empty())
       this->init();
   }
 }
